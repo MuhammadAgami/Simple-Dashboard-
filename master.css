@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    background-color: #001;
+    display: flex;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.menu{
+    background-color: #123;
+    width: 54px;
+    height: calc(100vh - 40px);
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.menu:hover{
+    width: 260px;
+}
+ul{
+    width: 100%;
+    height: 95%;
+    position: relative;
+}
+ul li:first-child{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+ul li:first-child img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    border: white 2px solid;
+    flex-shrink: 0;
+}
+ul li a{
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    transition: 0.5s;
+}
+ul li a i{
+    font-size: 30px;
+}
+ul li:nth-child(2),ul li a:hover{
+    background-color: #ffffff55;   
+    border-radius: 10px;
+}
+ul li:last-child{
+    background-color: #a00;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px;
+}
+ul li:last-child:hover a{
+    background-color: #a00;
+}
+.content{
+    padding: 20px;
+    width: 100%;
+}
+.content .dashboard{
+    background-color: #0481ff;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+}
+.content .all-boxs{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.content .all-boxs .box{
+    flex-basis: 200px;
+    flex-grow: 1;
+    background-color: #123;  
+    height: 200px; 
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+.content .all-boxs .box i{
+    font-size: 40px;
+}
+.content .all-boxs .box p:first-child{
+    font-size: 16px;
+    text-align: center;
+}
+.content .all-boxs .box p:last-child{
+    font-size: 40px;
+    text-align: center;
+}
+.content table{
+    width: 100%;
+    margin-top: 20px;
+    border-spacing: 10px;
+}
+.content table th{
+    background-color: #0481ff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.content table td{
+    background-color: #123;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+.content table td:hover{
+    background-color: #ffffff55;
+}
+.content table td:nth-child(2) span{
+    background-color: green;
+    padding: 5px;
+    border-radius: 5px;
+}
+.content table td:last-child span{
+    background-color: gold;
+    padding: 5px;
+    border-radius: 5px;
+    color: #000;
+}
